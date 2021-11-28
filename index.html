@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>Far From Home</title>
+
+</head>
+
+<body>
+    <!-- <i class="fal fa-times"></i> -->
+    
+    <!-- ***** Home Page ***** -->
+
+     
+    
+    <!-- For Navigation of page -->
+
+    <div class="home-navigation">
+
+        <div class="top-background"><img src="images/31.jpg"></div>
+
+        <div id="homelogin">
+            
+            <div id="login-signin">
+                <p>Login</p><i onclick="popdown();" class="fas fa-times"></i>
+            </div>
+
+            <div id="login-money">
+                <p id="money-p1">Now earn travel credits when sharing a link.</p><br>
+                <h2>$ 10 FREE</h2>
+                <p id="money-p2">WHEN YOU SIGN UP NOW</p>
+            </div>
+            <div id="login-facebook">
+                <i class="fab fa-facebook-f"></i> <p>Continue with Facebook</p>
+            </div>
+            <div id="login-twitter">
+                <i class="fab fa-twitter"></i> <p>Continue with Twitter</p>
+            </div>
+            <div id="login-google">
+                <i class="fab fa-google"></i> <p>Continue with Google</p>
+            </div>
+            <div id="login-apple">
+                <i class="fab fa-apple"></i> <p>Continue with Apple</p>
+            </div>
+            <div id="login-email">
+                <h5>or with your email address</h5>
+            </div>
+            <div id="login-inputs">
+                <input type="text" placeholder="&nbsp;&nbsp;Email Address" ><br>
+                <input type="password" placeholder="&nbsp;&nbsp;Password" >
+            </div>
+            <div id="login-forgotpass">
+                <p>Forgot Password?</p>
+            </div>
+            <div id="login-signbtn">
+                <button>Sign In</button>
+            </div>
+            <div id="login-createaccount">
+                <p>Don't have an account? <span>Create Account</span></p>
+            </div>
+
+        </div>
+        
+
+        
+
+        <div id="home-navbar">
+
+            <h2>Far From Home</h2>
+            <ul>
+                
+                <li> <a class="active" href="index.html" id="flight">Flights</a> </li>
+                <li> <a href="hotels.html" id="hotels">Hotels</a> </li>
+                <li> <a href="attraction.html" id="attractions">Attractions</a> </li>
+                <li> <a href="aboutus.html" id="aboutus">About Us</a> </li>
+
+            </ul>
+
+            <a href="#" class="home-log-sign" onclick="popup();"><i class="fas fa-users" style="padding-right: 5px;"></i>Login</a>
+            <div class="hamburger" onclick="hambur();">
+                <div class="ham1"></div>
+                <div class="ham2"></div>
+                <div class="ham3" ></div>
+            </div>
+        </div>
+
+        <div id="home-nav-active">
+            <ul>
+                <li> <a class="active" href="index.html" id="flight">Flights</a> </li>
+                <li> <a href="hotels.html" id="hotels">Hotels</a> </li>
+                <li> <a href="attraction.html" id="attractions">Attractions</a> </li>
+                <li> <a href="aboutus.html" id="aboutus">About Us</a> </li>
+            </ul>
+        </div>
+
+
+</div>
+
+<!-- ***** For Description of home page ***** -->
+    
+    <div class="home-desc">
+
+        <div class="home-desc1">
+            <h2>Discover your place</h2>
+        </div>
+
+        <div class="home-desc2">
+            <p>Ridiculous travel deals<br> you can't find anywhere else.</p>
+        </div>
+
+        <div class="home-desc3">
+            <p>We <span>travel</span> not to escape life but for life not to escape us.<p>
+        </div>
+
+    </div>
+
+<!-- ***** For no of people an route ***** -->
+
+<div class="home-select">
+
+<div class="home-trip-select">
+    
+    <select>
+
+        <option> Round Trip&nbsp;</option>
+        <option>One Way</option>
+
+    </select>
+
+</div>
+
+<div id="home-traveler-select">
+    
+   <div id="number">1</div>
+   <p id="travelerchange">Traveller&nbsp;&nbsp;&nbsp;</p>
+   <button id="traveler-plus"><b>+</b></button>
+   <button id="traveler-minus"><b>-</b></button>
+
+</div>
+
+</div>
+
+<!-- ***** For inputs of Home page ***** -->
+
+
+<div class="home-inputs">
+    
+    <div class="home-input-location">
+        <input type="text" placeholder="&nbsp;From">
+    </div>
+
+    <div class="home-input-checkin">
+        <input type="text" placeholder="&nbsp;To">
+    </div>
+
+    <div class="home-input-checkout">
+        <input onfocus="(this.type='date')" placeholder="&nbsp;Depart">
+        
+    </div>
+
+    <div class="home-input-guests">
+        <input onfocus="(this.type='date')" placeholder="&nbsp;Return">
+        
+    </div>
+
+    <div class="home-input-search-btn">
+       <button> <i class="fas fa-search"></i> &nbsp;Search</button>
+    </div>
+
+</div>
+
+
+<!-- For bottom of home page for information of social media -->
+
+    <div class="home-social-news">
+
+       <div class="share">
+
+       <p>Share this page</p>
+       </div>
+       <div class="social-links">
+
+       <div  class="social-media" id="facebook"><i class="fab fa-facebook-f"></i></div>
+       <div  class="social-media" id="twitter"><i class="fab fa-twitter"></i></div>
+       <div class="social-media" id="instagram"><i class="fab fa-instagram"></i></div>
+       <div class="social-media" id="pinterest"><i class="fab fa-pinterest-p"></i></div>
+       <div class="social-media" id="youtube"><i class="fab fa-youtube"></i></div>
+       <div class="social-media" id="linkedin"><i class="fab fa-linkedin-in"></i></div>
+       <div class="social-media" id="linkedin"><i class="fas fa-envelope"></i></div>
+       
+       </div>
+
+    </div>
+
+
+<!-- ***** Flights boxes here ***** -->
+
+<div class="flights-content-box">
+    
+
+    <div class="flights-title">
+        <h1>Welcome! Find a flexible flight for your next trip.</h1>
+        <p>Take a look</p>
+    </div>
+
+    <div class="flight-searchbtn">
+        <input type="text" name="#" placeholder="Enter Location"><button id="flight-btn">Search Deals</button>
+
+    </div>
+
+
+
+</div>
+
+<div class="flights-boxes active-flights-boxes">
+
+    <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-8.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-7.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-6.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-5.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-1.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-2.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+        
+        <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-3.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="seemore">
+        <a href="#">See More<span>&nbsp;&nbsp;<i class="fas fa-forward"></i></span></a>
+    </div>
+
+
+    <!-- <div class="flight-box">
+
+        <div class="flight-img">
+            <img src="images/stupa-4.jpg">
+        </div>
+
+        <div class="flight-deal">
+            
+            <div class="deal-top">
+                <div class="top1"><span>$126</span>  $88</div>
+                <div class="top2">FFH Rate</div>
+            </div>
+
+            <div class="deal-bottom">
+                <div class="bottom1"><p><span>Gaindakot </span>&nbsp;  <i class="fas fa-exchange-alt"></i> &nbsp; <span>Kathmandu</span></p></div>
+                <div class="bottom2"><span>Round Trip&nbsp;</span>&nbsp;&nbsp;Mon, Aug 9 - Mon, Aug 16</div>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    </div>
+
+
+
+    <div class="home-what">  
+
+        <div class="worldwide">
+            <img src="images/World.png">
+            <h2>Worldwide Coverage</h2>
+            <p>Flights to over 2,000 cities</p>
+        </div>
+
+        <div class="service">
+            <img src="images/plane.png">
+            <h2>One-stop Service Guarantee</h2>
+            <p>Price guaranteed upon confirmed payment, booking guaranteed once tickets issued<br><a href="#">Learn More</a></p>
+        </div>
+
+        <div class="secure">
+            <img src="images/secure.png">
+            <h2>Secure Payment</h2>
+            <p>Convenient & reliable booking and payment system</p>
+        </div>
+
+    </div>
+
+    <div class="subscribe">
+        
+        <div class="svg">
+            <img src="images/svg.svg">
+        </div>
+
+        <div class="subscribe-head">
+            <h2>Get Updates & More</h2>
+            <p>Thoughtful thoughts to your inbox</p>
+        </div>
+
+        <div class="subscribe-input">
+            <input type="email" name="#" placeholder="Your Email">
+            <button>Subscribe</button>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        
+
+
+        <div class="travel">
+
+            <div class="travel-head"><h3>Far From Home</h3></div>
+            <div class="travel-1"><p>Travel you choose the best destination, we offer the best experience</p></div>
+            <div class="travel-2">
+                <div class=" travelmedia travel-fb"><i class="fab fa-facebook-square"></i></div>
+                <div class="travelmedia travel-insta"><i class="fab fa-instagram"></i></div>
+                <div class="travelmedia travel-twitter"><i class="fab fa-twitter"></i></div>
+                <div class="travelmedia travel-linkedin"><i class="fab fa-linkedin-in"></i></div>
+            </div>
+            
+        </div>
+
+        <div class="about">
+            
+            <div class="about-head"><h3>About</h3></div>
+            <div class="about-1"><p>About Us</p></div>
+            <div class="about-2"><p>Features</p></div>
+            <div class="about-3"><p>News and Blogs</p></div>
+
+        </div>
+
+        <div class="company">
+
+            <div class="company-head"><h3>Company</h3></div>
+            <div class="company-1"><p>Team</p></div>
+            <div class="company-2"><p>Plan & Pricing</p></div>
+            <div class="company-3"><p>Become a member</p></div>
+            
+        </div>
+
+        <div class="contact">
+
+            <div class="support-head"><h3>Contact</h3></div>
+            <div class="input-name"><input type="text" name="#" placeholder="Name"></div>
+            <div class="input-email"><input type="text" name="#" placeholder="Email"></div>
+            <div class="input-message"><textarea placeholder="Message Here"></textarea></div>
+            <div class="input-btn"><button>Submit</button></div>
+            
+        </div>
+
+        <div class="support">
+
+            <div class="support-head"><h3>Support</h3></div>
+            <div class="support-1"><p>FAQs</p></div>
+            <div class="support-2"><p>Support Center</p></div>
+            <div class="support-3"><p>Contact Us</p></div>
+            
+        </div>
+    </footer>
+
+ <div class="copyright index-copyright">
+            <div class="copyright1"><p>&copy; 2021 FFH, &nbsp;All rights reserved.</p></div>
+            <div class="copyright2"><p>Terms & Agreements  &nbsp;&nbsp;&nbsp;    Privacy Policy</p></div>
+</div>
+   
+
+
+<!-- ***** JavaScript here ***** -->
+
+<script src="JS/script.js">
+   
+
+
+
+</script>
+
+
+
+</body>
+
+</html> 

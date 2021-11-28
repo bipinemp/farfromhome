@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <title>Far From Home</title>
+  </head>
+
+  <body>
+    <!-- <i class="fal fa-times"></i> -->
+
+    <!-- ***** Home Page ***** -->
+
+    <!-- For Navigation of page -->
+
+    <div class="home-navigation">
+      <div class="top-background" id="hotels-img">
+        <img src="images/36.jpg" />
+      </div>
+
+      <div id="homelogin">
+        <div id="login-signin">
+          <p>Sign In</p>
+          <i onclick="popdown();" class="fas fa-times"></i>
+        </div>
+
+        <div id="login-money">
+          <p id="money-p1">
+            Now earn travel credits when sharing a link.
+          </p>
+          <br />
+          <h2>$ 10 FREE</h2>
+          <p id="money-p2">WHEN YOU SIGN UP NOW</p>
+        </div>
+        <div id="login-facebook">
+          <i class="fab fa-facebook-f"></i>
+          <p>Continue with Facebook</p>
+        </div>
+        <div id="login-twitter">
+          <i class="fab fa-twitter"></i>
+          <p>Continue with Twitter</p>
+        </div>
+        <div id="login-google">
+          <i class="fab fa-google"></i>
+          <p>Continue with Google</p>
+        </div>
+        <div id="login-apple">
+          <i class="fab fa-apple"></i>
+          <p>Continue with Apple</p>
+        </div>
+        <div id="login-email">
+          <h5>or with your email address</h5>
+        </div>
+        <div id="login-inputs">
+          <input type="text" placeholder="&nbsp;&nbsp;Email Address" /><br />
+          <input type="password" placeholder="&nbsp;&nbsp;Password" />
+        </div>
+        <div id="login-forgotpass">
+          <p>Forgot Password?</p>
+        </div>
+        <div id="login-signbtn">
+          <button>Sign In</button>
+        </div>
+        <div id="login-createaccount">
+          <p>Don't have an account? <span>Create Account</span></p>
+        </div>
+      </div>
+
+      <div id="home-navbar">
+        <h2>Far From Home</h2>
+        <ul>
+          <li><a href="index.html" id="flight">Flights</a></li>
+          <li><a class="active" href="hotels.html" id="hotels">Hotels</a></li>
+          <li><a href="attraction.html" id="attractions">Attractions</a></li>
+          <li><a href="aboutus.html" id="aboutus">About Us</a></li>
+        </ul>
+
+        <a href="#" class="home-log-sign" onclick="popup();"><i class="fas fa-users" style="padding-right: 5px;"></i>Login</a>
+        <div class="hamburger" onclick="hambur();">
+          <div class="ham1"></div>
+          <div class="ham2"></div>
+          <div class="ham3" ></div>
+      </div>
+      </div>
+      <div id="home-nav-active">
+        <ul>
+            <li> <a class="active" href="index.html" id="flight">Flights</a> </li>
+            <li> <a href="hotels.html" id="hotels">Hotels</a> </li>
+            <li> <a href="attraction.html" id="attractions">Attractions</a> </li>
+            <li> <a href="aboutus.html" id="aboutus">About Us</a> </li>
+        </ul>
+    </div>
+
+    </div>
+
+    <!-- ***** Description of  hotel first page ***** -->
+
+    <div class="hotel-desc">
+      <div class="desc1">
+          <h1>DISCOVER</h1>
+      </div>
+
+      <div class="desc2">
+          <h2>luxury hotels</h2>
+      </div>
+
+      <div class="desc3">
+          <a href="#">Explore more<span>...</span></a>
+      </div>
+    </div>
+    
+    <!-- For active hotel input section -->
+    <section class="active-hotel-input-section">
+      
+      <div class="active-hotel-destination">
+        <div><p>Destination</p></div>
+        <div><input type="text" placeholder="&nbsp;Type destination..."></div>
+      </div>
+  
+      <div class="active-hotel-checkin">
+        <div><P>Check in</P></div>
+        <input onfocus="(this.type='date')" placeholder="&nbsp;mm/dd/yy">
+  
+      </div>
+  
+      <div class="active-hotel-checkout">
+        <div><P>Check out</P></div>
+        <input onfocus="(this.type='date')" placeholder="&nbsp;mm/dd/yy">
+  
+      </div>
+  
+      <div class="active-hotel-adults">
+        <div><p>Adults</p></div>
+        <div><input type="number" min="0" max="5" placeholder="&nbsp;0"></div>
+      </div> 
+  
+      <div class="active-hotel-childrens">
+        <div><p>Children</p></div>
+        <div><input type="number" min="0" max="4" placeholder="&nbsp;0"></div>
+      </div>
+  
+      <div class="active-hotel-search">
+        <div><a href="#">Search...</a></div>
+      </div>
+
+    </section>
+
+    <!-- ***** number of adults destination etc... ***** -->
+
+    <div class="hotel-input-section">
+
+    <div class="hotel-destination">
+      <div><p>Destination</p></div>
+      <div><input type="text" placeholder="&nbsp;Type destination..."></div>
+    </div>
+
+    <div class="hotel-checkin">
+      <div><P>Check in</P></div>
+      <input onfocus="(this.type='date')" placeholder="&nbsp;mm/dd/yy">
+
+    </div>
+
+    <div class="hotel-checkout">
+      <div><P>CHeck out</P></div>
+      <input onfocus="(this.type='date')" placeholder="&nbsp;mm/dd/yy">
+
+    </div>
+
+    <div class="hotel-adults">
+      <div><p>Adults</p></div>
+      <div><input type="number" min="0" max="5" placeholder="&nbsp;0"></div>
+    </div> 
+
+    <div class="hotel-childrens">
+      <div><p>Children</p></div>
+      <div><input type="number" min="0" max="4" placeholder="&nbsp;0"></div>
+    </div>
+
+    <div class="hotel-search">
+      <div><a href="#">Search...</a></div>
+    </div>
+
+  </div>
+
+
+  <!-- ***** For suggested hotels ***** -->
+
+  <div class="hotel-head1">
+    <p>Explore</p>
+  </div>
+
+  <div class="hotel-head2">
+    <p>Our beautiful hotels</p>
+  </div>
+
+
+  <!-- ***** For hotel cards high rated hotels ***** -->
+
+  <section class="hotel-cards-title">
+    <div><h2>Suggested high rated hotels...</h2></div>
+  </section>
+
+  <section  class="hotel-cards">
+
+    <div class="card1">
+    <div class="hotel-card-img">
+      <img src="./images/a.jfif">
+    </div>
+    <div class="hotel-card-title"><h1>Astro Hotel</h1></div>
+    <div class="hotel-card-rate"><p>From $200/Night</p></div>
+    <div class="hotel-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+    <div class="hotel-card-btn"><a href="#">Book Now...</a></div>
+  </div>
+
+  <div class="card2">
+    <div class="hotel-card-img">
+      <img src="./images/aa.jfif">
+    </div>
+    <div class="hotel-card-title"><h1>Enchanted Garden</h1></div>
+    <div class="hotel-card-rate"><p>From $310/Night</p></div>
+    <div class="hotel-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+    <div class="hotel-card-btn"><a href="#">Book Now...</a></div>
+  </div>
+
+  <div class="card3">
+    <div class="hotel-card-img">
+      <img src="./images/aaa.jfif">
+    </div>
+    <div class="hotel-card-title"><h1>The Paradise</h1></div>
+    <div class="hotel-card-rate"><p>From $200/Night</p></div>
+    <div class="hotel-card-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+    <div class="hotel-card-btn"><a href="#">Book Now...</a></div>
+  </div>
+
+  </section>
+
+
+  <section class="hotels-affordable">
+
+    <div class="hotels-affordable-title">
+      <h1>Luxurious</h1>
+    </div>
+    <div class="hotels-affordable-desc">
+      <p>Affordable rooms</p>
+    </div>
+
+  </section>
+
+
+
+  <!-- ***** for hotels affordable lists ***** -->
+
+  <section class="hotels-lists">
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h1.jpeg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h2.jpg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h3.jpg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h4.jpeg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h5.jpeg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+
+
+    <div class="hotel1-list">
+
+      <div class="hotel1-list-img">
+        <img src="./images/h6.jpeg">
+      </div>
+      <div class="hotel1-list-desc">
+        <div class="hotel1-title">Astro Hotel</div>
+        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="hotel1-desc-rate"><p><span>$200</span> Per night</p></div>
+        <div class="hotel1-desc-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, maxime possimus? Veniam.</p></div>
+        <div class="hotel1-desc-book"><a href="#">Book now</a></div>
+      </div>
+
+    </div>
+    
+
+
+    
+
+
+  </section>
+
+  <div class="seemore hotel-seemore"><a href="#">See More<span>&nbsp;&nbsp;<i class="fas fa-forward"></i></span></a></div>
+
+  
+<!-- ***** Footer secion ***** -->
+
+
+  <footer class="hotel-footer">
+        
+
+
+    <div class="travel">
+
+        <div class="travel-head"><h3>Far From Home</h3></div>
+        <div class="travel-1"><p>Travel you choose the best destination, we offer the best experience</p></div>
+        <div class="travel-2">
+            <div class=" travelmedia travel-fb"><i class="fab fa-facebook-square"></i></div>
+            <div class="travelmedia travel-insta"><i class="fab fa-instagram"></i></div>
+            <div class="travelmedia travel-twitter"><i class="fab fa-twitter"></i></div>
+            <div class="travelmedia travel-linkedin"><i class="fab fa-linkedin-in"></i></div>
+        </div>
+        
+    </div>
+
+    <div class="about">
+        
+        <div class="about-head"><h3>About</h3></div>
+        <div class="about-1"><p>About Us</p></div>
+        <div class="about-2"><p>Features</p></div>
+        <div class="about-3"><p>News and Blogs</p></div>
+
+    </div>
+
+    <div class="company">
+
+        <div class="company-head"><h3>Company</h3></div>
+        <div class="company-1"><p>Team</p></div>
+        <div class="company-2"><p>Plan & Pricing</p></div>
+        <div class="company-3"><p>Become a member</p></div>
+        
+    </div>
+
+    <div class="contact">
+
+        <div class="support-head"><h3>Contact</h3></div>
+        <div class="input-name"><input type="text" name="#" placeholder="Name"></div>
+        <div class="input-email"><input type="text" name="#" placeholder="Email"></div>
+        <div class="input-message"><textarea placeholder="Message Here"></textarea></div>
+        <div class="input-btn"><button>Submit</button></div>
+        
+    </div>
+
+    <div class="support">
+
+        <div class="support-head"><h3>Support</h3></div>
+        <div class="support-1"><p>FAQs</p></div>
+        <div class="support-2"><p>Support Center</p></div>
+        <div class="support-3"><p>Contact Us</p></div>
+        
+    </div>
+
+   
+
+
+</footer>
+
+<div class="copyright hotel-copyright">
+        <div class="copyright1"><p>&copy; 2021 FFH, &nbsp;All rights reserved.</p></div>
+        <div class="copyright2"><p>Terms & Agreements  &nbsp;&nbsp;&nbsp;    Privacy Policy</p></div>
+</div>
+
+
+
+
+
+    <!-- ***** JavaScript here ***** -->
+
+    <script src="JS/scriptho.js">
+      
+
+
+    </script>
+  </body>
+</html>
